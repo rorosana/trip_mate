@@ -1,0 +1,10 @@
+^C:\USERS\R095947\DOCUMENTS\TRIPMATE\TRIP_MATE\BUILD\WINDOWS\X64\CMAKEFILES\C827C6C0D63229DAD53524C25E837E08\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/R095947/Documents/tripMate/trip_mate/windows -BC:/Users/R095947/Documents/tripMate/trip_mate/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/R095947/Documents/tripMate/trip_mate/build/windows/x64/trip_mate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,28 @@
+^C:\USERS\R095947\DOCUMENTS\TRIPMATE\TRIP_MATE\BUILD\WINDOWS\X64\CMAKEFILES\7AC7BFD5525D32F6E1154D796DBC9054\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\R095947\fvm\versions\stable PROJECT_DIR=C:\Users\R095947\Documents\tripMate\trip_mate FLUTTER_ROOT=C:\Users\R095947\fvm\versions\stable FLUTTER_EPHEMERAL_DIR=C:\Users\R095947\Documents\tripMate\trip_mate\windows\flutter\ephemeral PROJECT_DIR=C:\Users\R095947\Documents\tripMate\trip_mate FLUTTER_TARGET=C:\Users\R095947\Documents\tripMate\trip_mate\lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\R095947\Documents\tripMate\trip_mate\.dart_tool\package_config.json C:/Users/R095947/fvm/versions/stable/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\R095947\DOCUMENTS\TRIPMATE\TRIP_MATE\BUILD\WINDOWS\X64\CMAKEFILES\26195355A481F4F346C8B3A567B440B6\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\R095947\DOCUMENTS\TRIPMATE\TRIP_MATE\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/R095947/Documents/tripMate/trip_mate/windows -BC:/Users/R095947/Documents/tripMate/trip_mate/build/windows/x64 --check-stamp-file C:/Users/R095947/Documents/tripMate/trip_mate/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

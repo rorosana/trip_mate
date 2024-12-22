@@ -1,0 +1,1 @@
+ C:\\Users\\R095947\\Documents\\tripMate\\trip_mate\\.dart_tool\\flutter_build\\0b83fac5cba5b6d0bb839b5803f42471\\native_assets.yaml: 

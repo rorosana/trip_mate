@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trip_mate/auth/screens/register_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -45,6 +46,27 @@ class LoginScreenState extends State<LoginScreen> {
                 ElevatedButton(
                   onPressed: (() {}),
                   child: const Text('Login'),
+                ),
+                const SizedBox(height: 10),
+                const Row(children: [
+                  Expanded(child: Divider()),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    child: Text(
+                      'or',
+                    ),
+                  ),
+                  Expanded(child: Divider()),
+                ]),
+                const SizedBox(height: 10),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RegisterScreen()),
+                    );
+                  },
+                  child: const Text('Sign Up'),
                 ),
               ],
             ),

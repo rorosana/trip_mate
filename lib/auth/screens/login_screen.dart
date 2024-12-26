@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trip_mate/auth/screens/register_screen.dart';
+import 'package:trip_mate/screens/home_lists.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -44,7 +45,12 @@ class LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: 16),
                 ElevatedButton(
-                  onPressed: (() {}),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const HomeLists()),
+                    );
+                  },
                   child: const Text('Login'),
                 ),
                 const SizedBox(height: 10),

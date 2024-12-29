@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class StartManager extends StatefulWidget {
@@ -24,14 +25,23 @@ class StartManagerState extends State<StartManager> {
       _hasSeenWelcomeScreen = prefs.getBool('hasSeenWelcomeScreen') ?? false;
     });
 
-    if (_hasSeenWelcomeScreen) {}
+    if (!mounted) return;
+
+    if (_hasSeenWelcomeScreen) {
+      context.go('/HomeLists');
+    } else {
+      context.go('/Welcome');
+    }
   }
 
-  @override // TODO: implement ==
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-      title: const Text('startManager'),
-    ));
+          title: const Text('startManager'),
+        ),
+        body: const Center(
+          child: CircularProgressIndicator(),
+        ));
   }
 }

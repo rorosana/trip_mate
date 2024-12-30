@@ -1,6 +1,7 @@
 //the first screen only shows once
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -13,7 +14,9 @@ class Welcome extends StatelessWidget {
         ),
         body: Center(
             child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            context.go('/login');
+          },
           child: const Text('Continue'),
         )));
   }

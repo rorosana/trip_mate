@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeLists extends StatefulWidget {
-  const HomeLists({Key? key}) : super(key: key);
+  const HomeLists({super.key});
 
   @override
   HomeListsState createState() => HomeListsState();
@@ -12,8 +13,12 @@ class HomeListsState extends State<HomeLists> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Lists'),
-      ),
+          title: const Text('Home Lists'),
+          leading: IconButton(
+              icon: const Icon(Icons.arrow_back),
+              onPressed: () {
+                context.go('/login');
+              })),
       body: const Center(
         child: Column(
           children: [

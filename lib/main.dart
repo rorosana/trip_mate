@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:trip_mate/auth/screens/login_screen.dart';
+import 'package:trip_mate/core/app_router.dart';
+
+// Configuración de GoRouter
+// Configuración de GoRouter
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +13,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return MaterialApp.router(
+      title: 'Assistant',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: LoginScreen(),
+      routerConfig: appRouter,
+      // home: LoginScreen(),
     );
   }
 }

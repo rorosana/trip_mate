@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:trip_mate/assistant/assistant_screens/select_assistant_screen.dart';
 import 'package:trip_mate/auth/screens/login_screen.dart';
 import 'package:trip_mate/auth/screens/register_screen.dart';
 import 'package:trip_mate/screens/home_lists.dart';
@@ -15,6 +16,10 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       path: '/welcome',
       builder: (context, state) => const Welcome(),
+    ),
+    GoRoute(
+      path: '/SelectAssistant',
+      builder: (context, state) => const SelectAssistantScreen(),
     ),
     GoRoute(
       path: '/login',

@@ -15,7 +15,7 @@ class Welcome extends StatelessWidget {
         body: Center(
             child: ElevatedButton(
           onPressed: () {
-            context.go('/login');
+            context.go('/SelectAssistant');
           },
           child: const Text('Continue'),
         )));
